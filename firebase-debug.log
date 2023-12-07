@@ -1,0 +1,47 @@
+[debug] [2023-12-05T12:10:34.522Z] ----------------------------------------------------------------------
+[debug] [2023-12-05T12:10:34.524Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sarvesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-05T12:10:34.524Z] CLI Version:   12.9.1
+[debug] [2023-12-05T12:10:34.525Z] Platform:      win32
+[debug] [2023-12-05T12:10:34.525Z] Node Version:  v19.6.0
+[debug] [2023-12-05T12:10:34.525Z] Time:          Tue Dec 05 2023 17:40:34 GMT+0530 (India Standard Time)
+[debug] [2023-12-05T12:10:34.525Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-05T12:10:34.584Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-05T12:10:34.585Z] > authorizing via signed-in user (s7chavan@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Sarvesh
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-05T12:10:48.540Z] Using project from CLI flag: mentalspace-2b47f
+[debug] [2023-12-05T12:10:48.542Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mentalspace-2b47f [none]
+[debug] [2023-12-05T12:10:48.997Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mentalspace-2b47f 200
+[debug] [2023-12-05T12:10:48.997Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mentalspace-2b47f {"projectId":"mentalspace-2b47f","projectNumber":"198477348619","displayName":"mentalspace","name":"projects/mentalspace-2b47f","resources":{"hostingSite":"mentalspace-2b47f"},"state":"ACTIVE","etag":"1_61d2abdd-7d64-445e-aedb-379121c698da"}
+[info] i  Using project mentalspace-2b47f (mentalspace) 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-05T12:10:49.001Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mentalspace-2b47f [none]
+[debug] [2023-12-05T12:10:49.618Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mentalspace-2b47f 200
+[debug] [2023-12-05T12:10:49.618Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mentalspace-2b47f {"projectId":"mentalspace-2b47f","projectNumber":"198477348619","displayName":"mentalspace","name":"projects/mentalspace-2b47f","resources":{"hostingSite":"mentalspace-2b47f"},"state":"ACTIVE","etag":"1_61d2abdd-7d64-445e-aedb-379121c698da"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
