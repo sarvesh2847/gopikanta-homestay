@@ -505,7 +505,7 @@ h1 {
 /*--------services---------*/
 /*--------Customer---------*/
 .Customer {
-  background-image: url("Images/background-2.png");
+  background-image: url("..Image/cu");
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
