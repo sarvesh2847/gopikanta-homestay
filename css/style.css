@@ -107,18 +107,33 @@ header .navlinks span {
 }
 
 
- @media only screen and (max-width:768px) {
+ 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+#menulist {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 768px) {
   header ul {
+    display: none; /* Initially hide the menu */
     position: absolute;
-    top: 100px;
+    top: 60px; /* Adjusted the top position to make sure it's below the header */
     left: 0;
     width: 100%;
-    height: 100vh;
     background: #009f7f;
     overflow: hidden;
     transition: max-height 0.5s;
     text-align: center;
     z-index: 9;
+  }
+
+  header ul.active {
+    display: block; /* Display the menu when it has the active class */
+    max-height: 100vh;
   }
 
   header ul li {
@@ -127,10 +142,14 @@ header .navlinks span {
 
   header ul li a {
     color: white;
+    display: block;
+    padding: 20px 0; /* Add some padding to the menu items */
   }
 
   header i {
     color: white;
+    display: block;
+    margin-bottom: 20px; /* Add some margin to the icon */
   }
 
   header .navlinks span {
