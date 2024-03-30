@@ -13,12 +13,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
 
   <header>
     <div class="content flex_space">
@@ -27,31 +28,54 @@
       </div>
       <div class="navlinks">
         <ul id="menulist">
-          <li><a href="index.html">home</a> </li>
-          <li><a href="#box">about</a> </li>
-          <li><a href="#pages">pages</a> </li>
-          <li><a href="#news">news</a> </li>
-          <li><a href="#contact">contact</a> </li>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="#about">About</a> </li>
+          <li><a href="#gallery">Gallery</a> </li>
+          <li><a href="#services">Service</a> </li>
+          <li><a href="#contact">Contact</a> </li>
         </ul>
-        <span class="fa fa-bars" onclick="menutoggle()"></span>
+        <span class="fa fa-bars menu-icon" onclick="menutoggle()"></span>
+        <span class="fa fa-close close-icon" onclick="menutoggle()"></span>
       </div>
     </div>
   </header>
 
-
   <script>
-    var menulist = document.getElementById('menulist');
-    menulist.style.maxHeight = "0px";
+  function menutoggle() {
+  var menulist = document.getElementById('menulist');
+  var menuIcon = document.querySelector('.menu-icon');
+  var closeIcon = document.querySelector('.close-icon');
 
-    function menutoggle() {
-      if (menulist.style.maxHeight == "0px") {
-        menulist.style.maxHeight = "100vh";
-      } else {
-        menulist.style.maxHeight = "0px";
-      }
-    }
+  if (menulist.classList.contains('active')) {
+    menulist.classList.remove('active');
+    menuIcon.style.display = "inline"; // Show the bars icon
+    closeIcon.style.display = "none"; // Hide the close icon
+  } else {
+    menulist.classList.add('active');
+    menuIcon.style.display = "none"; // Hide the bars icon
+    closeIcon.style.display = "inline"; // Show the close icon
+  }
+}
+
   </script>
+<!-- bottom to top -->
+<a id="button"></a>
+<script>
+var btn = $('#button');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 150) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '150');
+});
+</script>
 
   <section class="home">
     <div class="content">
@@ -131,11 +155,11 @@
       }
     })
   </script>
-  <section class="about top">
+  <section class="about top" id="about">
     <div class="container flex">
       <div class="left">
         <div class="heading">
-          <h1>WELCOME</h1>
+          <h1 id="welcome">WELCOME</h1>
           <h2>GOPIKANTA</h2>
         </div>
         <p>Welcome to Gopikanta Homestay, your haven in the heart of Guhagar! Embrace the tranquility of nature and the
@@ -146,12 +170,12 @@
         <button class="primary-btn">ABOUT US</button>
       </div>
       <div class="right">
-        <img src="Images\banner-1.jpg" margin-top="10px" width="378px" height="288px" object-fit="contain">
+        <img src="Images\banner-1.jpg" margin-top="10px"  object-fit="contain">
       </div>
     </div>
   </section>
 
-  <section class="gallery">
+  <section class="gallery top" id="gallery">
     <div class="container top">
       <div class="heading">
         <h1>PHOTOS</h1>
@@ -225,7 +249,6 @@
     </div>
   </section>
 
-
   <script>
     $('.owl-carousel1').owlCarousel({
       loop: true,
@@ -250,15 +273,13 @@
     })
   </script>
 
-
-  <section class="services top">
+  <section class="services top" id="services">
     <div class="container">
       <div class="heading">
         <h1>SERVICES</h1>
         <h2>Our Services</h2>
 
       </div>
-
 
       <div class="content flex_space">
         <div class="left grid2">
@@ -290,13 +311,12 @@
         <div class="right">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5654537149608!2d73.18858171185418!3d17.480500683353494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be9f1c6c9ec8fa3%3A0x5cb32821006c2e31!2sGopikanta%20Home%20Stays!5e0!3m2!1sen!2sin!4v1701756176733!5m2!1sen!2sin"
-            width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+           style="border:0;" allowfullscreen="" loading="lazy" class="map"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </section>
-
 
 
 
@@ -351,9 +371,8 @@
 
 
 
-
-  <footer>
-    <div class="container grid">
+  <footer >
+    <div class="container grid" >
       <div class="box">
         <img src="Images\logo.png" alt="">
         <p style="color: black;">"कोकणात वसलेलं सुंदरअश्या जगेचं आनुभव एकदा घ्या! येथे जीवन चंद्राच्या संगीतात गाणंतर
@@ -371,10 +390,9 @@
 
       <div class="box">
 
-
       </div>
 
-      <div class="box" style="color: black;">
+      <div class="box" style="color: black;" id="contact">
         <h2>Contact Us</h2>
         <p style="align-content: center;">
           <i class="fa fa-user"></i>
@@ -392,13 +410,11 @@
         <label>pxchavan@gmail.com</label> <br>
       </div>
 
-
   </footer>
 
   <div class="legal">
     <p class="container">Copyright (c) 2023 Copyright Holder All Rights Reserved.</p>
   </div>
-
 
 
   <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
