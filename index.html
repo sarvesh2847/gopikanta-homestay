@@ -13,8 +13,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
@@ -41,41 +41,41 @@
   </header>
 
   <script>
-  function menutoggle() {
-  var menulist = document.getElementById('menulist');
-  var menuIcon = document.querySelector('.menu-icon');
-  var closeIcon = document.querySelector('.close-icon');
+    function menutoggle() {
+      var menulist = document.getElementById('menulist');
+      var menuIcon = document.querySelector('.menu-icon');
+      var closeIcon = document.querySelector('.close-icon');
 
-  if (menulist.classList.contains('active')) {
-    menulist.classList.remove('active');
-    menuIcon.style.display = "inline"; // Show the bars icon
-    closeIcon.style.display = "none"; // Hide the close icon
-  } else {
-    menulist.classList.add('active');
-    menuIcon.style.display = "none"; // Hide the bars icon
-    closeIcon.style.display = "inline"; // Show the close icon
-  }
-}
+      if (menulist.classList.contains('active')) {
+        menulist.classList.remove('active');
+        menuIcon.style.display = "inline"; // Show the bars icon
+        closeIcon.style.display = "none"; // Hide the close icon
+      } else {
+        menulist.classList.add('active');
+        menuIcon.style.display = "none"; // Hide the bars icon
+        closeIcon.style.display = "inline"; // Show the close icon
+      }
+    }
 
   </script>
-<!-- bottom to top -->
-<a id="button"></a>
-<script>
-var btn = $('#button');
+  <!-- bottom to top -->
+  <a id="button"></a>
+  <script>
+    var btn = $('#button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 150) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 150) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '150');
-});
-</script>
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '150');
+    });
+  </script>
 
   <section class="home">
     <div class="content">
@@ -170,7 +170,7 @@ btn.on('click', function(e) {
         <button class="primary-btn">ABOUT US</button>
       </div>
       <div class="right">
-        <img src="Images\banner-1.jpg" margin-top="10px"  object-fit="contain">
+        <img src="Images\banner-1.jpg" margin-top="10px" object-fit="contain">
       </div>
     </div>
   </section>
@@ -311,7 +311,7 @@ btn.on('click', function(e) {
         <div class="right">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5654537149608!2d73.18858171185418!3d17.480500683353494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be9f1c6c9ec8fa3%3A0x5cb32821006c2e31!2sGopikanta%20Home%20Stays!5e0!3m2!1sen!2sin!4v1701756176733!5m2!1sen!2sin"
-           style="border:0;" allowfullscreen="" loading="lazy" class="map"
+            style="border:0;" allowfullscreen="" loading="lazy" class="map"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
@@ -321,7 +321,7 @@ btn.on('click', function(e) {
 
 
   <section class="Customer top">
-    <div class="container">
+    <div class="container" style="background-color: rgb(243, 255, 240);">
       <div class="owl-carousel owl-carousel2 owl-theme">
         <div class="item">
           <i class="fa-solid fa-quote-right"></i>
@@ -332,8 +332,12 @@ btn.on('click', function(e) {
         </div>
         <div class="item">
           <i class="fa-solid fa-quote-right"></i>
-          <p>Very Cooperative Owner. Very Good Experience</p>
-          <h3>Nilkanth Apte</h3>
+          <p>I recently stayed at Gopikanta, and I loved my stay over there. The rooms were very clean, spacious and
+            budget friendly. Beach was just a minute away from the property. Backyard full of greenery and is nicely
+            maintained. Owners are very nice caring people, very cooperative, you will feel like you are staying at
+            home. Tasty and healthy authentic homemade food is served. We ordered MODAK and Amboli in breakfast. It was
+            superb, very tasty. About fish, they serve tasty deep fry fish (any). Also prawns curry was awesome.</p>
+          <h3>Chinmay Dandawate</h3>
 
         </div>
         <div class="item">
@@ -341,6 +345,15 @@ btn.on('click', function(e) {
           <p>Amazing experience neat and clean room owner and his family are sweet and supportive we spent 2 days here
             it's feel like a home Plus point beach touched property which is best and safe for kids</p>
           <h3>Mayuri Sadekar</h3>
+
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>It's a amazing place. Access to beach from their back yard. Walkable distance from bus stand , Vyadeshwar
+            Mandir and market.
+            Tidy rooms, AC, non AC rooms available at reasonable rates.
+            Owner family makes sure that your stay is comfortable. Highly recommended.</p>
+          <h3>Riddhi Athavale</h3>
 
         </div>
       </div>
@@ -371,8 +384,8 @@ btn.on('click', function(e) {
 
 
 
-  <footer >
-    <div class="container grid" >
+  <footer>
+    <div class="container grid">
       <div class="box">
         <img src="Images\logo.png" alt="">
         <p style="color: black;">"कोकणात वसलेलं सुंदरअश्या जगेचं आनुभव एकदा घ्या! येथे जीवन चंद्राच्या संगीतात गाणंतर
